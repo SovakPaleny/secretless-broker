@@ -17,6 +17,7 @@ do
   secret_value="${SECRET}_${idx}"
 
   security add-generic-password \
+    -A \
     -a "${secret_account}" \
     -s "${secret_service}" \
     -w "${secret_value}"
